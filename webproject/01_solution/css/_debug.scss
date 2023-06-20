@@ -1,0 +1,15 @@
+body {
+  background: url('../assets/debug/01_Phone.jpg') no-repeat center top;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url('../assets/debug/02_Tablet.jpg') no-repeat center top;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background: url('../assets/debug/03_Desktop.jpg') no-repeat center top;
+  }
+}
