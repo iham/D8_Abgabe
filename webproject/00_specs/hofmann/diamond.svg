@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="27px" viewBox="0 0 32 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>diamond</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Advantages-#2-tablet" transform="translate(-56, -349)" stroke="#4B4B4B" stroke-width="2">
+            <g id="diamond" transform="translate(56, 349)">
+                <polygon id="Stroke-1" points="31.3763556 7.01575111 15.6881778 26.8940089 0 7.01575111 7.54232889 0 23.8339556 0"></polygon>
+                <line x1="1.42222222" y1="7.82222222" x2="30.9883733" y2="7.82222222" id="Stroke-2"></line>
+                <polyline id="Stroke-3" points="7.82222222 0.711111111 10.8391822 6.74503111 15.6663467 0.711111111 20.49344 6.74503111 23.5104 0.711111111"></polyline>
+                <polyline id="Stroke-4" points="20.3209244 8.42567111 15.4938311 25.9239822 10.6666667 7.82222222"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

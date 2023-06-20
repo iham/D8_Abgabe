@@ -1,1 +1,11 @@
-# D8_Abgabe
+# ABGABE | D8 - Coding und Testing von Online Anwendungen
+
+## Aufgabenstellungen
+
+### Webprojekt - HTML & (S)CSS
+Entwicklung einer statischen, responsiven Webseite mit HTML, SCSS und Bootstrap, basierend auf einer Sketchvorlage.
+
+### Testing
+#### Schreiben von Unit Tests mit Jasmin & Karma (Angular)
+
+#### Erstellen von Selenium Tests mit Hilfe der Selenium IDE

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="17px" viewBox="0 0 11 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>location</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contact-#2-Tablet" transform="translate(-402, -125)">
+            <g id="location" transform="translate(402, 125)">
+                <path d="M4.76640373,16.3727056 C4.89754804,16.5907492 5.12878937,16.7234667 5.37774128,16.7234667 C5.62672904,16.7234667 5.85800623,16.5908601 5.98915054,16.3728533 C7.39825276,14.0841149 10.7554109,8.33862876 10.7554109,5.5406662 C10.7554109,2.48066707 8.34770458,0 5.37770543,0 C2.40767042,0 0,2.48066707 0,5.5406662 C0,8.33862876 3.35712224,14.0841149 4.76640373,16.3727056 L4.76640373,16.3727056 Z" id="Stroke-1" fill="#4B4B4B"></path>
+                <ellipse id="Oval-198" fill="#FFFFFF" cx="6.01666667" cy="5.07777778" rx="2.01666667" ry="2.07777778"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

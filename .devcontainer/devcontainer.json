@@ -1,0 +1,22 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "D8 Abgabe - Node.js & Angular project",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.live-server",
+				"glenn2223.live-sass",
+				"EditorConfig.EditorConfig",
+				"CelianRiboulet.webvalidator",
+				"IronGeek.vscode-env",
+				"formulahendry.auto-rename-tag",
+				"yzhang.markdown-all-in-one"
+			],
+			"settings": {}
+		}
+	},
+  	"remoteUser": "node"
+}

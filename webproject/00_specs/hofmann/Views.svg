@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Views</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Projects-#4-tablet" transform="translate(-525, -301)" fill="#FFFFFF">
+            <g id="views" transform="translate(525, 295)">
+                <path d="M9,6 C12.4793939,6 15.4793939,7.83333333 18,11.5 C15.4793939,15.1666667 12.4793939,17 9,17 C5.52060608,17 2.52060608,15.1666667 0,11.5 C2.52060608,7.83333333 5.52060608,6 9,6 Z M9,9 C7.75735931,9 6.75,10.1192881 6.75,11.5 C6.75,12.8807119 7.75735931,14 9,14 C10.2426407,14 11.25,12.8807119 11.25,11.5 C11.25,10.1192881 10.2426407,9 9,9 Z" id="Views"></path>
+            </g>
+        </g>
+    </g>
+</svg>
