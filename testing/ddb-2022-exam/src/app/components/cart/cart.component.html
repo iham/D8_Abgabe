@@ -1,0 +1,37 @@
+<div class="cart">
+  <div class="total" (click)="toggleCart()">
+    <div>
+      <span class="material-symbols-outlined">shopping_cart</span>
+      <div>
+        <span class="total-price">
+          {{total!! | currency: '€ ': true: '1.2-2': 'de'}}
+        </span>
+        <button class="expand-cart" [class.visible]="visible">
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <ul [class.visible]="visible" class="product-list">
+    <li *ngFor="let product of products; let i = index">
+      <div class="title">
+        {{product?.title}}
+      </div>
+      <div class="price">
+
+        {{product.price | currency: '€ ': true: '1.2-2'}}
+
+
+        <button class="delete" (click)="removeProduct(i)">
+          <span class="material-symbols-outlined">delete</span>
+        </button>
+
+      </div>
+    </li>
+    <ng-container *ngIf="!products.length">
+      <li>No Products</li>
+    </ng-container>
+  </ul>
+</div>
+
+

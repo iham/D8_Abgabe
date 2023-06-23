@@ -1,0 +1,38 @@
+main {
+  padding-top: 4rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 100px) {
+  .toolbar{
+    .flex-center{
+      span{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .toolbar{
+    .flex-center{
+      span{
+        display: block;
+      }
+    }
+  }
+}

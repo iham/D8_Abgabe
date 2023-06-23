@@ -1,0 +1,38 @@
+.item {
+  max-width: 320px;
+  border-radius: .25rem;
+  box-shadow: 0 0 12px rgba(180, 180, 180, .2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 2rem);
+  justify-content: space-between;
+}
+
+.product-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    object-fit: contain;
+  }
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button{
+    background: #125699;
+    color: #fff;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    &:hover{
+      background: #0d3e6e;
+    }
+  }
+}
+
