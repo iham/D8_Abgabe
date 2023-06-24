@@ -25,11 +25,13 @@ describe('ProductService', () => {
   });
 
   it('getProducts should be implemented', () => {
-    // simple solution
+    // solution a - is it truthy (whatever that actually means)
+    expect(service.getProducts).toBeTruthy()
+    // solution b - is it defined (whatever that means tbh)
     expect(service.getProducts).toBeDefined();
-    // another solution
+    // solution c - check if type is function (we are getting closer)
     expect(typeof service.getProducts).toBe("function")
-    // more precise solution
+    // solution d - using jasmine (looks like the most precise way)
     expect(service.getProducts).toEqual(jasmine.any(Function));
   });
 
