@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="46px" viewBox="0 0 55 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>responsive</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Advantages-#2" transform="translate(-161, -289)">
+            <g id="responsive" transform="translate(162, 290)">
+                <g id="desktop" stroke="#4B4B4B" stroke-width="2">
+                    <rect id="Rectangle-796" x="0" y="0" width="45" height="29.255814" rx="4"></rect>
+                    <line x1="25.799025" y1="29.7135814" x2="25.799025" y2="35.0484651" id="Stroke-2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="18.738975" y1="29.7135814" x2="18.738975" y2="35.0484651" id="Stroke-3" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="28.09905" y1="35.9089302" x2="16.599075" y2="35.9089302" id="Stroke-4" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+                <g id="phone" transform="translate(31, 10)">
+                    <rect id="Rectangle-796" stroke="#4B4B4B" stroke-width="2" fill="#FFFFFF" x="0" y="0" width="22" height="34" rx="4"></rect>
+                    <line x1="0.555386207" y1="25.4864" x2="21.7967655" y2="25.4864" id="Stroke-2" stroke="#4B4B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <path d="M11.3793103,27.9555556 C12.2166759,27.9555556 12.8965517,28.6326844 12.8965517,29.4666667 C12.8965517,30.3006993 12.2166759,30.9777778 11.3793103,30.9777778 C10.5418943,30.9777778 9.86206897,30.3006993 9.86206897,29.4666667 C9.86206897,28.6326844 10.5418943,27.9555556 11.3793103,27.9555556 L11.3793103,27.9555556 Z" id="Stroke-3" fill="#4B4B4B"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

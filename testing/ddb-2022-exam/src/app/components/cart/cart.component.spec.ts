@@ -29,6 +29,9 @@ describe('CartComponent', () => {
     component.toggleCart();
     // visible is now true
     expect(component.visible).toBeTrue();
+    component.toggleCart();
+    // visible is now false again
+    expect(component.visible).toBeFalse();
   });
 
 });

@@ -25,7 +25,12 @@ describe('ProductService', () => {
   });
 
   it('getProducts should be implemented', () => {
+    // simple solution
     expect(service.getProducts).toBeDefined();
+    // another solution
+    expect(typeof service.getProducts).toBe("function")
+    // more precise solution
+    expect(service.getProducts).toEqual(jasmine.any(Function));
   });
 
   it('should get products and products should be equal PRODUCTS', (done) => {

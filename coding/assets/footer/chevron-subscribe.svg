@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12.8284271px" height="20px" viewBox="0 0 12.8284271 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chevron-subscribe</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer-#3" transform="translate(-382, -289)">
+            <g id="subscribe-button" transform="translate(362, 275)">
+                <g id="chevron-subscribe" transform="translate(19, 14)">
+                    <rect id="Rectangle" x="0" y="0" width="14" height="20"></rect>
+                    <polyline id="subscribe" stroke="#4B4B4B" stroke-width="4" stroke-linecap="round" points="3 2 11 10 3 18"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
