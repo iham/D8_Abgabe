@@ -6,3 +6,37 @@
 // @import 'portfolio';
 // @import 'team';
 // @import 'contact';
+
+#features {
+  .feature-listing img {
+    height: 32px;
+    width: auto;
+  }
+  h4 {
+    line-height: 1;
+  }
+}
+
+// md devices (Tablets)
+@media (min-width: $bs-bp-md) {
+  #features {
+    .feature-listing img {
+      height: 38px;
+    }
+    .img-fluid.object-fit-cover {
+      max-width: 180%;
+    }
+  } 
+}
+
+// xl devices (Desktop)
+@media (min-width: $bs-bp-xl) {
+  #features {
+    .feature-listing img {
+      height: 44px;
+    }
+    .img-fluid.object-fit-cover {
+      max-width: 100%;
+    }
+  }
+}

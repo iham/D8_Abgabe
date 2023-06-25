@@ -58,13 +58,23 @@ h2 {
   line-height: 2.5rem;
 }
 
+// section subheading & Testimonials
+h3 {
+  font-family: $ff-os;
+  font-size: .75rem;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+
+}
 // features, plan, footer 
 h4 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: .75rem;
   letter-spacing: .8px;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 // copy text
@@ -90,6 +100,11 @@ a {
 
 // xl devices (Desktop)
 @media (min-width: $bs-bp-xl) {
+  h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+  }
   h4 {
     font-size: 1.125rem;
     letter-spacing: 1px;

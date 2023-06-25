@@ -1,5 +1,4 @@
 header {
-  height: 540px;
   color: $c-white;
   background: url('../assets/header/hero-image.png') no-repeat bottom center / cover;
   // positioning for opacity on bg-image and keeping inner height
@@ -49,7 +48,6 @@ header {
     letter-spacing: -0.8px;
   }
   header {
-    height: 564px;
     h1 {
       font-size: 1.5rem;
       letter-spacing: 1.5px; // no value in specs defined
@@ -88,7 +86,6 @@ header {
   }
 
   header {
-    height: 768px;
     h1 {
       font-size: 2.25rem;
       letter-spacing: 2px;
