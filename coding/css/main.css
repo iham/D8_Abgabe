@@ -74,6 +74,27 @@ a:hover {
   opacity: 0.8;
 }
 
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+  padding: 0.75rem 3rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+
+button.yellow {
+  background-color: #EBCB80;
+}
+
+button.gray {
+  background-color: #7D7D7D;
+  color: #FFF;
+}
+
 @media (min-width: 1200px) {
   h3 {
     font-size: 1rem;
@@ -88,6 +109,10 @@ a:hover {
   p, ul li {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  button {
+    font-size: 1rem;
+    letter-spacing: 1px;
   }
 }
 header {
@@ -179,6 +204,13 @@ header svg path {
 }
 #features h4 {
   line-height: 1;
+}
+
+#download {
+  background: url("../assets/download/background@2x-1.png") no-repeat center bottom/cover;
+}
+#download h2, #download p {
+  color: #FFF;
 }
 
 @media (min-width: 768px) {

@@ -17,6 +17,13 @@
   }
 }
 
+#download {
+  background: url('../assets/download/background@2x-1.png') no-repeat center bottom / cover;
+  h2, p {
+    color: $c-white;
+  }
+}
+
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
   #features {
