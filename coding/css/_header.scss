@@ -1,0 +1,115 @@
+header {
+  height: 540px;
+  color: $c-white;
+  background: url('../assets/header/hero-image.png') no-repeat bottom center / cover;
+  // positioning for opacity on bg-image and keeping inner height
+  position: relative;
+
+  // position content above bg and filter
+  .container {
+    position: relative;
+    z-index: 10;  
+  }
+
+  // use a pseudo element to add the opacity masking for bg-image
+  &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: .5;
+      z-index: 5;
+  }
+
+  // social media icons
+  aside {
+    img {
+      height: 16px;
+    }
+  }  
+
+  // section heading
+  h2 {
+    color: $c-white;
+    line-height: 1.5rem;
+  }
+  // chevron down missing - replaced with font awesome inline svg
+  svg path {
+    fill: $c-white;
+  }
+}
+
+// md devices (Tablets)
+@media (min-width: $bs-bp-md) {
+  h2 {
+    font-size: 2rem;
+    letter-spacing: -0.8px;
+  }
+  header {
+    height: 564px;
+    h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1.5px; // no value in specs defined
+    }
+    h2 {
+      line-height: 2.25rem;
+    }
+    // navigation
+    .nav {
+      --bs-nav-link-color: #{$c-white};
+      --bs-nav-link-hover-color: #{$c-white};
+      --bs-nav-link-font-weight: bold;
+      line-height: 1;
+      font-size: .75rem;
+      text-transform: uppercase;
+      a {
+        color: var(--bs-nav-link-color);
+        font-weight: var(--bs-nav-link-font-weight);
+      }
+      a:hover {
+        color: var(--bs-nav-link-hover-color);
+        
+      }
+    }
+  }
+
+}
+
+// xl devices (Desktop)
+@media (min-width: $bs-bp-xl) {
+  // section headings
+  h2 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+    letter-spacing: -1.6px;
+  }
+
+  header {
+    height: 768px;
+    h1 {
+      font-size: 2.25rem;
+      letter-spacing: 2px;
+
+    }
+    // social media should be larger
+    aside {
+      img {
+        height: 24px;
+      }
+    }
+    .nav {
+      font-size: 1.125rem;
+    }
+    // section heading
+    h2 {
+      line-height: 3rem;
+    }
+    video + a > img {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+footer {
+  color: $c-white;
+  background-color: $c-black;
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1.33px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      padding-bottom: .5rem;
+    }
+  }
+  a {
+    color: $c-white;
+    
+    // at least a little effect
+    &:hover {
+      opacity: .8;
+    }
+  }
+  // form
+  .form-control, .input-group-text {
+    border-color: $c-darkgray;
+  }
+  .form-control {
+    font-size: .75rem;
+    background-color: transparent;
+    &::placeholder {
+      color: $c-white;
+      opacity: .5;
+    }
+  }
+  .input-group-text {
+    background-color: $c-yellow;
+  }
+  // social media
+  img {
+    width: auto;
+    height: 18px;
+  }
+}
+// md devices (Tablets)
+@media (min-width: $bs-bp-md) {
+
+}
+
+// xl devices (Desktop)
+@media (min-width: $bs-bp-xl) {
+  footer {
+    ul li {
+      padding-bottom: .75rem;
+    }
+    // social media
+    img {
+      height: 24px;
+    }
+    .form-control {
+      font-size: 1rem;
+    }
+  }
+}

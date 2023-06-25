@@ -1,27 +1,20 @@
-// Open Sans from github.com
-@font-face {
-  font-family: "Open Sans";
-  src: url("https://github.com/sorenson/open-sans-woff/blob/master/fonts/Regular/OpenSans-Regular.woff2") format("woff2"),
-       url("https://github.com/sorenson/open-sans-woff/blob/master/fonts/Regular/OpenSans-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+// Open Sans from google
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 // Source Sans Pro from local
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro/SourceSansPro-Light.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro/SourceSansPro-Light.otf.woff") format("woff");
+  src: url("../assets/fonts/SourceSansPro-Light.ttf.woff2") format("woff2"),
+       url("../assets/fonts/SourceSansPro-Light.otf.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
+  font-style: light;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro/SourceSansPro-Regular.otf.woff") format("woff");
+  src: url("../assets/fonts/SourceSansPro-Regular.ttf.woff2") format("woff2"),
+       url("../assets/fonts/SourceSansPro-Regular.otf.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -29,9 +22,81 @@
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro/SourceSansPro-Bold.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro/SourceSansPro-Bold.otf.woff") format("woff");
+  src: url("../assets/fonts/SourceSansPro-Bold.ttf.woff2") format("woff2"),
+       url("../assets/fonts/SourceSansPro-Bold.otf.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
+}
+
+// base font is source sans pro
+:root {
+  --bs-font-sans-serif: #{$ff-ssp};
+}
+
+// main color for text
+body {
+  color: $c-black;
+}
+
+// brand (header & footer)
+h1 {
+  color: $c-yellow;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 1.1px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+// section headings
+h2 {
+  font-family: $ff-os;
+  font-size: 1.25rem;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: 2.5rem;
+}
+
+// features, plan, footer 
+h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .8px;
+  line-height: 1rem;
+}
+
+// copy text
+p, ul li {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+
+// links don't get decoration
+a {
+  text-decoration: none;
+  
+  // at least a little effect
+  &:hover {
+    opacity: .8;
+  }
+}
+
+// md devices (Tablets)
+@media (min-width: $bs-bp-md) {
+
+}
+
+// xl devices (Desktop)
+@media (min-width: $bs-bp-xl) {
+  h4 {
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    line-height: 1.875rem;
+  }
+  p, ul li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
