@@ -29,6 +29,88 @@
     border-radius: 8px;
     box-shadow: 0px 4px 16px rgba(0,0,0, 0.2);
   }
+  img.portrait {
+    border-radius: 100px;
+    border: 2px solid rgba(230,230,230, 1);
+  }
+}
+
+#plans {
+  .plan {
+    border-radius: .5rem;
+    background-size: 100%;
+    box-shadow: 0px 1px 1px rgba(0,0,0, 0.5);
+    background-color: $c-black;
+    border-radius: 8px;
+  }
+  // silver
+  .plan:nth-child(1) {
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 1) 100%);
+    grid-area: 1 / 1 / 4 / 2;
+    z-index: 1;
+    scale: 92%;
+    transform: translateY(-25px);
+  }
+  // gold
+  .plan:nth-child(2) {
+    background-color: $c-yellow;
+    background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0) 100%);
+    grid-area: 1 / 1 / 4 / 2;
+    z-index: 3;
+  }
+  // platinum
+  .plan:nth-child(3) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.401127) 100%);
+    grid-area: 1 / 1 / 4 / 2;
+    z-index: 0;
+    scale: 85%;
+    transform: translateY(-50px);
+  }
+
+  .plan:nth-child(1), .plan:nth-child(3) {
+    color: $c-white;
+    h4 {
+      color: $c-yellow;
+    }
+  }
+  p {
+    margin-bottom: .5rem
+  }
+  .price {
+    font-family: $ff-os;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    letter-spacing: -1.2px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: '$';
+      font-size: .75rem;
+      line-height: .75rem;
+      position: absolute;
+      top: 5px;
+      left: -7px;
+    }
+    &:after {
+      content: 'Year';
+      position: absolute;
+      left: 50%;
+      margin-left: -14px;
+      bottom: -25px;
+      font-family: $ff-ssp;
+      font-weight: bold;
+      font-size: .75rem;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+  }
+  h4.selected {
+    background-color: $c-yellow;
+    border-radius: 50px;
+  }
+  .plan-stack {
+    display: grid;
+  }
 }
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
@@ -39,7 +121,16 @@
     .img-fluid.object-fit-cover {
       max-width: 180%;
     }
-  } 
+  }
+  #plans {
+    .plan-stack {
+      display: flex;
+      .plan {
+        scale: 100%;
+        transform: translateY(0);    
+      }
+    }
+  }
 }
 
 // xl devices (Desktop)
@@ -52,4 +143,22 @@
       max-width: 100%;
     }
   }
+  #plans {
+    .price {
+      font-size: 4rem;
+      line-height: 4rem;
+      letter-spacing: -2.6px;
+      &:before {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        top: 7px;
+        left: -12px;
+      }
+      &:after {
+        font-size: 1.125rem;
+        letter-spacing: 1px;
+        margin-left: -20px;
+        bottom: -40px;
+      }
+    }  }
 }

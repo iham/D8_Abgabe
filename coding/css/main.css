@@ -91,7 +91,7 @@ button.yellow {
 }
 
 button.gray {
-  background-color: #7D7D7D;
+  background-color: #4B4B4B;
   color: #FFF;
 }
 
@@ -217,6 +217,82 @@ header svg path {
   border-radius: 8px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 }
+#testimonials img.portrait {
+  border-radius: 100px;
+  border: 2px solid rgb(230, 230, 230);
+}
+
+#plans .plan {
+  border-radius: 0.5rem;
+  background-size: 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  background-color: #4B4B4B;
+  border-radius: 8px;
+}
+#plans .plan:nth-child(1) {
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 100%, rgb(255, 255, 255) 100%);
+  grid-area: 1/1/4/2;
+  z-index: 1;
+  scale: 92%;
+  transform: translateY(-25px);
+}
+#plans .plan:nth-child(2) {
+  background-color: #EBCB80;
+  background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0) 100%);
+  grid-area: 1/1/4/2;
+  z-index: 3;
+}
+#plans .plan:nth-child(3) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.401127) 100%);
+  grid-area: 1/1/4/2;
+  z-index: 0;
+  scale: 85%;
+  transform: translateY(-50px);
+}
+#plans .plan:nth-child(1), #plans .plan:nth-child(3) {
+  color: #FFF;
+}
+#plans .plan:nth-child(1) h4, #plans .plan:nth-child(3) h4 {
+  color: #EBCB80;
+}
+#plans p {
+  margin-bottom: 0.5rem;
+}
+#plans .price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: -1.2px;
+  position: relative;
+  display: inline-block;
+}
+#plans .price:before {
+  content: "$";
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  position: absolute;
+  top: 5px;
+  left: -7px;
+}
+#plans .price:after {
+  content: "Year";
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+  bottom: -25px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+#plans h4.selected {
+  background-color: #EBCB80;
+  border-radius: 50px;
+}
+#plans .plan-stack {
+  display: grid;
+}
 
 @media (min-width: 768px) {
   #features .feature-listing img {
@@ -225,6 +301,13 @@ header svg path {
   #features .img-fluid.object-fit-cover {
     max-width: 180%;
   }
+  #plans .plan-stack {
+    display: flex;
+  }
+  #plans .plan-stack .plan {
+    scale: 100%;
+    transform: translateY(0);
+  }
 }
 @media (min-width: 1200px) {
   #features .feature-listing img {
@@ -232,6 +315,23 @@ header svg path {
   }
   #features .img-fluid.object-fit-cover {
     max-width: 100%;
+  }
+  #plans .price {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -2.6px;
+  }
+  #plans .price:before {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    top: 7px;
+    left: -12px;
+  }
+  #plans .price:after {
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    margin-left: -20px;
+    bottom: -40px;
   }
 }
 footer {
