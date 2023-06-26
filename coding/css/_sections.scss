@@ -24,6 +24,12 @@
   }
 }
 
+#testimonials {
+  .testimonial:hover {
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(0,0,0, 0.2);
+  }
+}
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
   #features {
