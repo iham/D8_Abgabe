@@ -321,6 +321,105 @@ header svg path {
   height: 1rem;
   width: auto;
 }
+#portfolio .portfolio-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "item-1 item-2" "item-3 item-3" "item-4 item-5" "item-6 item-6" "item-7 item-7";
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] img, #portfolio .portfolio-grid div[class^=portfolio-item-] .info {
+  grid-area: 1/1/4/2;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] .info {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: relative;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-]:hover .info, #portfolio .portfolio-grid div[class^=portfolio-item-].active .info {
+  display: block;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] hgroup:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #FFF;
+  margin: 1.125rem 0;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] h2, #portfolio .portfolio-grid div[class^=portfolio-item-] h5, #portfolio .portfolio-grid div[class^=portfolio-item-] h6, #portfolio .portfolio-grid div[class^=portfolio-item-] p, #portfolio .portfolio-grid div[class^=portfolio-item-] a {
+  color: #FFF;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-].inverted h2, #portfolio .portfolio-grid div[class^=portfolio-item-].inverted h5, #portfolio .portfolio-grid div[class^=portfolio-item-].inverted h6, #portfolio .portfolio-grid div[class^=portfolio-item-].inverted p, #portfolio .portfolio-grid div[class^=portfolio-item-].inverted a {
+  color: #4B4B4B;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-].inverted hgroup:after {
+  background-color: #4B4B4B;
+}
+#portfolio .portfolio-grid div[class^=portfolio-item-] p {
+  margin: 0;
+}
+#portfolio .portfolio-grid .portfolio-item-1 {
+  grid-area: item-1;
+}
+#portfolio .portfolio-grid .portfolio-item-2 {
+  grid-area: item-2;
+}
+#portfolio .portfolio-grid .portfolio-item-3 {
+  grid-area: item-3;
+}
+#portfolio .portfolio-grid .portfolio-item-4 {
+  grid-area: item-4;
+}
+#portfolio .portfolio-grid .portfolio-item-5 {
+  grid-area: item-5;
+}
+#portfolio .portfolio-grid .portfolio-item-6 {
+  grid-area: item-6;
+}
+#portfolio .portfolio-grid .portfolio-item-7 {
+  grid-area: item-7;
+}
+#portfolio .portfolio-grid .portfolio-item-7.active .info {
+  background-color: #F6F6F6;
+}
+#portfolio .portfolio-grid .portfolio-item-7 h2 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.75rem;
+}
+#portfolio .portfolio-grid .stats img, #portfolio .portfolio-grid .views img {
+  width: auto;
+  height: 12px;
+}
+#portfolio .portfolio-grid .stats p, #portfolio .portfolio-grid .views p {
+  display: inline;
+}
+#portfolio .portfolio-grid .views {
+  position: absolute;
+  top: 1.25rem;
+  right: 2rem;
+}
 
 @media (min-width: 768px) {
   #features .feature-listing img {
@@ -335,6 +434,23 @@ header svg path {
   #plans .plan-stack .plan {
     scale: 100%;
     transform: translateY(0);
+  }
+  #portfolio .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "item-1 item-3 item-3" "item-6 item-6 item-2" "item-4 item-7 item-5";
+  }
+  #portfolio .portfolio-grid div[class^=portfolio-item-] h5 {
+    letter-spacing: -0.6px;
+    font-size: 1.5rem;
+  }
+  #portfolio .portfolio-grid div[class^=portfolio-item-] hgroup:after {
+    width: 16px;
+    height: 4px;
+  }
+  #portfolio .portfolio-grid .portfolio-item-7 h2 {
+    font-size: 2.25rem;
+    letter-spacing: -1px;
+    line-height: 2rem;
   }
 }
 @media (min-width: 1200px) {
@@ -367,6 +483,21 @@ header svg path {
   #portfolio .pagination img {
     height: 1.5rem;
     width: auto;
+  }
+  #portfolio .portfolio-grid h5 {
+    font-size: 2rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.8px;
+  }
+  #portfolio .portfolio-grid h6 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 1px;
+  }
+  #portfolio .portfolio-grid .portfolio-item-7 h2 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 3.375rem;
   }
 }
 footer {
