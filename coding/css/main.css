@@ -444,6 +444,20 @@ header svg path {
   list-style-type: disc;
 }
 
+#contact img {
+  height: 268px;
+  width: auto;
+}
+#contact .tooltip-address {
+  position: absolute;
+  width: 190px;
+  height: 93px;
+  background: url("../assets/contact/Tooltip@2x.png") no-repeat top center/contain;
+  background-size: contain;
+  top: 30%;
+  left: 30%;
+}
+
 @media (min-width: 768px) {
   #features .feature-listing img {
     height: 38px;
@@ -477,6 +491,12 @@ header svg path {
   }
   #team .img-fluid.object-fit-cover {
     height: auto;
+  }
+  #contact img {
+    height: auto;
+  }
+  #contact .tooltip-address {
+    left: 50%;
   }
 }
 @media (min-width: 1200px) {

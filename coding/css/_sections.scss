@@ -284,6 +284,19 @@
 
 #contact {
 
+  img {
+    height: 268px;
+    width: auto; 
+  }
+  .tooltip-address {
+    position: absolute;
+    width: 190px;
+    height: 93px;
+    background: url('../assets/contact/Tooltip@2x.png') no-repeat top center / contain;
+    background-size: contain;
+    top: 30%;
+    left: 30%;
+  }
 }
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
@@ -338,7 +351,12 @@
   
   }
   #contact {
-    
+    img {
+      height: auto;
+    }
+    .tooltip-address {
+      left: 50%;
+    } 
   }
 }
 
@@ -401,6 +419,5 @@
     }
   }
   #contact {
-  
   }
 }
