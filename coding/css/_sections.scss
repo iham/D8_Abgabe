@@ -173,13 +173,23 @@
           display: block;
         }
       }
-      hgroup:after {
-        content: '';
-        display: block;
-        width: 14px;
-        height: 2px;
-        background-color: $c-white;
-        margin: 1.125rem 0;
+      hgroup {
+        &:after {
+          content: '';
+          display: block;
+          width: 14px;
+          height: 2px;
+          background-color: $c-white;
+          margin: 1.125rem 0;
+        }
+        p {
+          font-family: $ff-ssp;
+          font-weight: normal;
+          letter-spacing: .8px;
+          font-size: .75rem;
+          line-height: 1rem;
+          margin: 0;
+        }
       }
       h5 {
         font-family: $ff-os;
@@ -187,14 +197,6 @@
         letter-spacing: -.5px;
         font-size: 1rem;
         line-height: 2rem;
-        margin: 0;
-      }
-      h6 {
-        font-family: $ff-ssp;
-        font-weight: normal;
-        letter-spacing: .8px;
-        font-size: .75rem;
-        line-height: 1rem;
         margin: 0;
       }
     
@@ -416,7 +418,7 @@
         line-height: 2.625rem;
         letter-spacing: -.8px;
       }
-      h6 {
+      hgroup p {
         font-size: 1.125rem;
         line-height: 1.875rem;
         letter-spacing: 1px;

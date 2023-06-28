@@ -351,20 +351,20 @@ header svg path {
   background-color: #FFF;
   margin: 1.125rem 0;
 }
+#portfolio .portfolio-grid div[class^=portfolio-item-] hgroup p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0;
+}
 #portfolio .portfolio-grid div[class^=portfolio-item-] h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   letter-spacing: -0.5px;
   font-size: 1rem;
   line-height: 2rem;
-  margin: 0;
-}
-#portfolio .portfolio-grid div[class^=portfolio-item-] h6 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: normal;
-  letter-spacing: 0.8px;
-  font-size: 0.75rem;
-  line-height: 1rem;
   margin: 0;
 }
 #portfolio .portfolio-grid div[class^=portfolio-item-] h2, #portfolio .portfolio-grid div[class^=portfolio-item-] h5, #portfolio .portfolio-grid div[class^=portfolio-item-] h6, #portfolio .portfolio-grid div[class^=portfolio-item-] p, #portfolio .portfolio-grid div[class^=portfolio-item-] a {
@@ -545,7 +545,7 @@ header svg path {
     line-height: 2.625rem;
     letter-spacing: -0.8px;
   }
-  #portfolio .portfolio-grid h6 {
+  #portfolio .portfolio-grid hgroup p {
     font-size: 1.125rem;
     line-height: 1.875rem;
     letter-spacing: 1px;
