@@ -282,6 +282,10 @@
     }
   }
 }
+
+#contact {
+
+}
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
   #features {
@@ -333,6 +337,9 @@
       height: auto;
     }
   
+  }
+  #contact {
+    
   }
 }
 
@@ -393,5 +400,8 @@
       }
 
     }
+  }
+  #contact {
+  
   }
 }
