@@ -3,30 +3,15 @@
 
 // Source Sans Pro from local
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-Light.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro-Light.otf.woff") format("woff");
-  font-weight: 300;
-  font-style: light;
-  font-display: swap;
+  @include sspfi('light', 300);
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-Regular.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro-Regular.otf.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  @include sspfi('normal', 400);
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-Bold.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro-Bold.otf.woff") format("woff");
-  font-weight: 700;
-  font-style: bold;
-  font-display: swap;
+  @include sspfi('bold', 700);
 }
 
 // base font is source sans pro
@@ -112,10 +97,9 @@ button.gray {
   background-color: $c-black;
   color: $c-white;
 }
-// md devices (Tablets)
-@media (min-width: $bs-bp-md) {
 
-}
+// md devices (Tablets)
+@media (min-width: $bs-bp-md) {}
 
 // xl devices (Desktop)
 @media (min-width: $bs-bp-xl) {

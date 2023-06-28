@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-Light.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-Light.otf.woff") format("woff");
-  font-weight: 300;
-  font-style: light;
+  src: url("../assets/fonts/SourceSansPro-light.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-light.otf.woff") format("woff");
+  font-weight: "light";
+  font-style: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-Regular.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-Regular.otf.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../assets/fonts/SourceSansPro-normal.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-normal.otf.woff") format("woff");
+  font-weight: "normal";
+  font-style: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-Bold.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-Bold.otf.woff") format("woff");
-  font-weight: 700;
-  font-style: bold;
+  src: url("../assets/fonts/SourceSansPro-bold.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-bold.otf.woff") format("woff");
+  font-weight: "bold";
+  font-style: 700;
   font-display: swap;
 }
 :root {
