@@ -298,6 +298,18 @@
     top: 30%;
     left: 30%;
   }
+  .contact-form {
+    .form-control {
+      padding: .75rem 0;
+      font-size: .75rem;
+      line-height: 1rem;
+      color: $c-darkgray;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $c-black;      
+    }
+  }
 }
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
@@ -357,7 +369,7 @@
     }
     .tooltip-address {
       left: 50%;
-    } 
+    }
   }
 }
 
@@ -420,5 +432,12 @@
     }
   }
   #contact {
+    .contact-form {
+      .form-control {
+        padding: .75rem 0;
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
+    }
   }
 }
