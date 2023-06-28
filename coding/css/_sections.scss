@@ -283,10 +283,11 @@
 }
 
 #contact {
-
-  img {
-    height: 268px;
-    width: auto; 
+  .map {
+    img {
+      height: 268px;
+      width: auto; 
+    }
   }
   .tooltip-address {
     position: absolute;
@@ -351,7 +352,7 @@
   
   }
   #contact {
-    img {
+    .map img {
       height: auto;
     }
     .tooltip-address {

@@ -444,7 +444,7 @@ header svg path {
   list-style-type: disc;
 }
 
-#contact img {
+#contact .map img {
   height: 268px;
   width: auto;
 }
@@ -492,7 +492,7 @@ header svg path {
   #team .img-fluid.object-fit-cover {
     height: auto;
   }
-  #contact img {
+  #contact .map img {
     height: auto;
   }
   #contact .tooltip-address {
