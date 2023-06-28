@@ -2,22 +2,22 @@
 @font-face {
   font-family: "Source Sans Pro";
   src: url("../assets/fonts/SourceSansPro-light.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-light.otf.woff") format("woff");
-  font-weight: "light";
-  font-style: 300;
+  font-weight: 300;
+  font-style: "light";
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
   src: url("../assets/fonts/SourceSansPro-normal.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-normal.otf.woff") format("woff");
-  font-weight: "normal";
-  font-style: 400;
+  font-weight: 400;
+  font-style: "normal";
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
   src: url("../assets/fonts/SourceSansPro-bold.ttf.woff2") format("woff2"), url("../assets/fonts/SourceSansPro-bold.otf.woff") format("woff");
-  font-weight: "bold";
-  font-style: 700;
+  font-weight: 700;
+  font-style: "bold";
   font-display: swap;
 }
 :root {

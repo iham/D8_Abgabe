@@ -1,8 +1,8 @@
 // Source Sans Pro include mixin
-@mixin sspfi($weight, $style) {
+@mixin sspfi($style, $weight) {
   font-family: "Source Sans Pro";
-  src: url("../assets/fonts/SourceSansPro-#{$weight}.ttf.woff2") format("woff2"),
-       url("../assets/fonts/SourceSansPro-#{$weight}.otf.woff") format("woff");
+  src: url("../assets/fonts/SourceSansPro-#{$style}.ttf.woff2") format("woff2"),
+       url("../assets/fonts/SourceSansPro-#{$style}.otf.woff") format("woff");
   font-weight: $weight;
   font-style: $style;
   font-display: swap;
