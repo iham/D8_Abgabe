@@ -258,6 +258,30 @@
     }
   }
 }
+
+#team {
+  display: grid;
+  & > img, & > div {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+  .img-fluid.object-fit-cover {
+    height: 150%;
+  }
+  h2, h4, p, li {
+    color: $c-white;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 1.5rem;
+      list-style-type: circle;
+      &.active {
+        list-style-type: disc;
+      }
+    }
+  }
+}
 // md devices (Tablets)
 @media (min-width: $bs-bp-md) {
   #features {
@@ -303,6 +327,12 @@
         }
       }  
     }
+  }
+  #team {
+    .img-fluid.object-fit-cover {
+      height: auto;
+    }
+  
   }
 }
 

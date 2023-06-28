@@ -421,6 +421,30 @@ header svg path {
   right: 2rem;
 }
 
+#team {
+  display: grid;
+}
+#team > img, #team > div {
+  grid-area: 1/1/4/2;
+}
+#team .img-fluid.object-fit-cover {
+  height: 150%;
+}
+#team h2, #team h4, #team p, #team li {
+  color: #FFF;
+}
+#team ul {
+  margin: 0;
+  padding: 0;
+}
+#team ul li {
+  font-size: 1.5rem;
+  list-style-type: circle;
+}
+#team ul li.active {
+  list-style-type: disc;
+}
+
 @media (min-width: 768px) {
   #features .feature-listing img {
     height: 38px;
@@ -451,6 +475,9 @@ header svg path {
     font-size: 2.25rem;
     letter-spacing: -1px;
     line-height: 2rem;
+  }
+  #team .img-fluid.object-fit-cover {
+    height: auto;
   }
 }
 @media (min-width: 1200px) {
